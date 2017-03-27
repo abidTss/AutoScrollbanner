@@ -15,10 +15,11 @@ public class HealperC {
     int dotsCount = 0;
     AutoScrollPagerAdapter autoScrollPagerAdapter;
     AutoScrollViewPager autoScrollViewPager;
+    //nvghgh
     private ImageView[] dots;
     LinearLayout dotsLinearLayout;
 
-    HealperC(Context context, AutoScrollViewPager autoScrollViewPager, int dotsCount, LinearLayout dotsLinearLayout) {
+   public HealperC(Context context, AutoScrollViewPager autoScrollViewPager, int dotsCount, LinearLayout dotsLinearLayout) {
         this.context = context;
         this.autoScrollViewPager = autoScrollViewPager;
         this.dotsLinearLayout = dotsLinearLayout;
@@ -36,7 +37,7 @@ public class HealperC {
         return onPageChangeListener;
     }
 
-    AutoScrollViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
+   public AutoScrollViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 

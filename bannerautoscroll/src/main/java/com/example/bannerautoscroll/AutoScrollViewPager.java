@@ -70,6 +70,7 @@ public class AutoScrollViewPager extends ViewPager {
         handler = new MyHandler(this);
         setViewPagerScroller();
     }
+    //uyuy
 
     /**
      * start auto scroll, first scroll delay time is {@link #getInterval()}
