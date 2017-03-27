@@ -53,11 +53,10 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
         imageView.setImageDrawable(context.getResources().getDrawable(R.drawable.images));
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         linearLayout.addView(imageView);
-        View itemView = inflater.inflate((XmlPullParser) linearLayout, container, false);
 
-        container.addView(itemView);
+        container.addView(linearLayout);
 
-        return itemView;
+        return linearLayout;
     }
 
     @Override
