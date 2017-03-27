@@ -7,7 +7,7 @@ allprojects {
         ....
         
         maven { url 'https://jitpack.io'}
-    }
+    
     }
     
 in build.gradle(project)
