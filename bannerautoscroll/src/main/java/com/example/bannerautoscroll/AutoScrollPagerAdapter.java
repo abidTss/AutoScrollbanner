@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import org.xmlpull.v1.XmlPullParser;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return picList.size();
     }
 
     @Override
@@ -50,7 +50,11 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
         linearLayout.setLayoutParams(layoutParams);
         ImageView imageView=new ImageView(context);
         imageView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        imageView.setImageDrawable(context.getResources().getDrawable(R.drawable.images));
+        Picasso.with(context)
+                .load(picList.get(position).toString())
+                .placeholder(R.drawable.images)
+                .into(imageView);
+       // imageView.setImageDrawable(context.getResources().getDrawable(R.drawable.images));
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         linearLayout.addView(imageView);
 

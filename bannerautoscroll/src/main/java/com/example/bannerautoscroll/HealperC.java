@@ -6,6 +6,8 @@ import android.support.v4.view.ViewPager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+
 /**
  * Created by android-1 on 24/3/17.
  */
@@ -18,16 +20,18 @@ public class HealperC {
     //nvghgh
     private ImageView[] dots;
     LinearLayout dotsLinearLayout;
+    ArrayList<String> picList;
 
-   public HealperC(Context context, AutoScrollViewPager autoScrollViewPager, int dotsCount, LinearLayout dotsLinearLayout) {
+   public HealperC(Context context, AutoScrollViewPager autoScrollViewPager, int dotsCount, LinearLayout dotsLinearLayout,ArrayList<String> picList) {
         this.context = context;
         this.autoScrollViewPager = autoScrollViewPager;
         this.dotsLinearLayout = dotsLinearLayout;
         this.dotsCount = dotsCount;
+        this.picList = picList;
     }
 
     public void setupBanner() {
-        autoScrollPagerAdapter = new AutoScrollPagerAdapter(context);
+        autoScrollPagerAdapter = new AutoScrollPagerAdapter(context, picList);
         autoScrollViewPager.setAdapter(autoScrollPagerAdapter);
         setUiPageViewController();
         autoScrollViewPager.setOnPageChangeListener(getPageListyener());
