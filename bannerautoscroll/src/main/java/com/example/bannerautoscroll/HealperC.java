@@ -22,12 +22,13 @@ public class HealperC {
     LinearLayout dotsLinearLayout;
     ArrayList<String> picList;
 
-   public HealperC(Context context, AutoScrollViewPager autoScrollViewPager, int dotsCount, LinearLayout dotsLinearLayout,ArrayList<String> picList) {
+    public HealperC(Context context, AutoScrollViewPager autoScrollViewPager, LinearLayout dotsLinearLayout, ArrayList<String> picList) {
         this.context = context;
         this.autoScrollViewPager = autoScrollViewPager;
         this.dotsLinearLayout = dotsLinearLayout;
-        this.dotsCount = dotsCount;
         this.picList = picList;
+        this.dotsCount = picList.size();
+
     }
 
     public void setupBanner() {
@@ -41,7 +42,7 @@ public class HealperC {
         return onPageChangeListener;
     }
 
-   public AutoScrollViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
+    public AutoScrollViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 

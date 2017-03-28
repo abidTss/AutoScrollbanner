@@ -6,13 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.abid.autoscrollbanner.MainActivity">
 
-
-    <com.example.bannerautoscroll.AutoScrollViewPager
-        android:layout_width="368dp"
-        android:layout_height="320dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
-
-    </com.example.bannerautoscroll.AutoScrollViewPager>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/img"
+    />
 
 </LinearLayout>
