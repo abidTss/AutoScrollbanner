@@ -51,13 +51,12 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
         ImageView imageView=new ImageView(context);
         imageView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         Picasso.with(context)
-                .load(picList.get(position).toString())
+                .load(picList.get(position))
                 .placeholder(R.drawable.images)
                 .into(imageView);
        // imageView.setImageDrawable(context.getResources().getDrawable(R.drawable.images));
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         linearLayout.addView(imageView);
-
         container.addView(linearLayout);
 
         return linearLayout;
