@@ -2,12 +2,14 @@ package com.example.bannerautoscroll;
 
 
 import android.content.Context;
+
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 
 import com.squareup.picasso.Picasso;
 
@@ -50,7 +52,7 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
         linearLayout.setLayoutParams(layoutParams);
         ImageView imageView=new ImageView(context);
         imageView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        Picasso.with(context)
+        Picasso.get()
                 .load(picList.get(position))
                 .placeholder(R.drawable.images)
                 .into(imageView);
