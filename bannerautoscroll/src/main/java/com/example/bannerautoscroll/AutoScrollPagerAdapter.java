@@ -2,7 +2,6 @@ package com.example.bannerautoscroll;
 
 
 import android.content.Context;
-
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,29 +9,25 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class AutoScrollPagerAdapter extends PagerAdapter {
 
-    private ArrayList<String> picList;
+    private List<String> picList;
     private Context context;
     private LayoutInflater inflater;
 
-    public AutoScrollPagerAdapter(Context context, ArrayList<String> picList) {
+    public AutoScrollPagerAdapter(Context context, List<String> picList) {
 
         this.picList = picList;
         this.context = context;
         inflater = LayoutInflater.from(context);
     }
 
-    public AutoScrollPagerAdapter(Context context) {
-        this.context = context;
-        inflater = LayoutInflater.from(context);
-    }
+
 
 
     @Override
@@ -42,7 +37,7 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view == ((LinearLayout) object);
+        return view ==object;
     }
 
     @Override
