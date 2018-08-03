@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.abid.autoscrollbanner.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -49,7 +50,7 @@ public class AutoScrollPagerAdapter extends PagerAdapter {
         imageView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         Picasso.get()
                 .load(picList.get(position))
-                .placeholder(com.example.bannerautoscroll.R.drawable.images)
+                .placeholder(R.drawable.images)
                 .into(imageView);
        // imageView.setImageDrawable(context.getResources().getDrawable(R.drawable.images));
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
