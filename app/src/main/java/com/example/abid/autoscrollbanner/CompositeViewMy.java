@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.example.bannerautoscroll.AutoScrollPagerAdapter;
-import com.example.bannerautoscroll.AutoScrollViewPager;
+import com.example.abid.autoscrollbanner.customViewpager.AutoScrollPagerAdapter;
+import com.example.abid.autoscrollbanner.customViewpager.AutoScrollViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

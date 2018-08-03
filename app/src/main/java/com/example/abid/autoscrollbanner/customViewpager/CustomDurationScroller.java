@@ -1,4 +1,4 @@
-package com.example.bannerautoscroll;
+package com.example.abid.autoscrollbanner.customViewpager;
 
 import android.content.Context;
 import android.view.animation.Interpolator;

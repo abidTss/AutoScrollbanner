@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import com.example.bannerautoscroll.AutoScrollViewPager;
-import com.example.bannerautoscroll.HealperC;
-
 import java.util.ArrayList;
 import java.util.List;
 

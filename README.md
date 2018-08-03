@@ -33,13 +33,13 @@ in build.gradle(App)
           android:layout_height="match_parent"
           >
           
-         <com.example.bannerautoscroll.AutoScrollViewPager
+         <com.example.abid.autoscrollbanner.customViewpager.AutoScrollViewPager
              android:id="@+id/auto_scroll_pager"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:layout_gravity="top"
              >
-         </com.example.bannerautoscroll.AutoScrollViewPager>
+         </com.example.abid.autoscrollbanner.customViewpager.AutoScrollViewPager>
 
          <LinearLayout
              android:layout_width="match_parent"
